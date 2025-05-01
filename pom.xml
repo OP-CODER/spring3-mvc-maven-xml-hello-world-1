@@ -10,8 +10,6 @@
 
     <properties>
         <jdk.version>21</jdk.version>
-        <spring.version>3.2.13.RELEASE</spring.version>
-        <jstl.version>1.2</jstl.version>
     </properties>
 
     <dependencies>
@@ -35,7 +33,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <release>21</release>
+                     <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                 </configuration>
             </plugin>
 
