@@ -43,7 +43,7 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.43.v20210629</version> <!-- Updated version -->
+                <version>9.4.43.v20210629</version>
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
@@ -62,4 +62,18 @@
                     <wtpversion>2.0</wtpversion>
                     <wtpContextName>spring3</wtpContextName>
                     <groupId>com.ncodeit</groupId>
-                    <artifactId>n
+                    <artifactId>ncodeit-hello-world</artifactId>
+                    <version>3.0</version> <!-- Fixed the missing version -->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.4.5</version> <!-- Ensure correct version -->
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
